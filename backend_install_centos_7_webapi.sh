@@ -50,7 +50,8 @@ read webApiToken
 echo -n "Server node ID:"
 read node_id
 echo "Writting config..."
-sed -i -e "s/NODE_ID = 1/NODE_ID = ${node_id}/g" -e "s/WEBAPI_URL = 'https://zhaoj.in'/WEBAPI_URL = '${webApiUrl}'/g" -e "s/WEBAPI_TOKEN = 'glzjin'/WEBAPI_TOKEN = '${webApiToken}'/g" userapiconfig.pyecho "Running system optimization and enable Google BBR..."
+sed -i -e "s/NODE_ID = 1/NODE_ID = ${node_id}/g" -e "s/WEBAPI_URL = 'https://zhaoj.in'/WEBAPI_URL = '${webApiUrl}'/g" -e "s/WEBAPI_TOKEN = 'glzjin'/WEBAPI_TOKEN = '${webApiToken}'/g" userapiconfig.py
+echo "Running system optimization and enable Google BBR..."
 rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
 rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm
 yum remove kernel-headers -y
