@@ -1,1 +1,0 @@
-yum install wget -y && wget https://raw.githubusercontent.com/tinchow/you-know-backend-server-install-scripts/master/backend_install_centos_7_webapi.sh && chmod +x backend_install_centos_7_webapi.sh && ./backend_install_centos_7_webapi.sh
